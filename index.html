@@ -1,16 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Website Template</title>
-	<link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrot Pie Haiku</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cormorant+SC:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
 
-	<h1>Website Template</h1>
-	<p>Fork and use this template repo (a.k.a. "boilerplate") for any web project</p>
-	<img src="assets/img/cat.jpg" alt="">
+  <div class="bg">
+    <div class="bg-img"></div>
+    <div class="bg-vignette"></div>
+    <div class="bg-grain"></div>
+    <div class="bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+  </div>
 
-	<script src="./assets/js/main.js"></script>
+  <div class="sparks" id="sparks"></div>
+
+  <div class="stage">
+
+    <div class="ornament" aria-hidden="true">
+      <svg viewBox="0 0 120 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="8" x2="48" y2="8" stroke="rgba(245,220,170,0.3)" stroke-width="0.5"/>
+        <circle cx="60" cy="8" r="3.5" stroke="rgba(245,220,170,0.45)" stroke-width="0.5"/>
+        <circle cx="60" cy="8" r="1.2" fill="rgba(245,220,170,0.4)"/>
+        <circle cx="48" cy="8" r="1.5" fill="rgba(245,220,170,0.25)"/>
+        <circle cx="72" cy="8" r="1.5" fill="rgba(245,220,170,0.25)"/>
+        <line x1="72" y1="8" x2="120" y2="8" stroke="rgba(245,220,170,0.3)" stroke-width="0.5"/>
+      </svg>
+    </div>
+
+    <div class="haiku" role="img" aria-label="Haiku: Humble carrot sleeps, Tucked in buttery pastry, Earth made into sweet.">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+    </div>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="label">Carrot Pie Haiku</div>
+
+  </div>
+
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
