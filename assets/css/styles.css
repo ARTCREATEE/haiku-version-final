@@ -2,7 +2,7 @@
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ── Variables ── */
+
 :root {
   --cream:  #f5e6c8;
   --gold:   #e8a96a;
@@ -12,7 +12,7 @@
   --shadow: rgba(20, 10, 5, 0.7);
 }
 
-/* ── Base ── */
+
 html, body {
   height: 100%;
   overflow: hidden;
@@ -27,7 +27,7 @@ body {
   min-height: 100vh;
 }
 
-/* ════════════════════════════
+
    BACKGROUND
 ════════════════════════════ */
 .bg {
@@ -80,9 +80,7 @@ body {
   to   { transform: translate(35px, 22px) scale(1.1); }
 }
 
-/* ════════════════════════════
-   STAGE
-════════════════════════════ */
+
 .stage {
   position: relative;
   z-index: 1;
@@ -92,7 +90,6 @@ body {
   width: 100%;
 }
 
-/* ── Ornament ── */
 .ornament {
   opacity: 0;
   animation: fadeUp 1s ease forwards 0.2s;
@@ -100,9 +97,7 @@ body {
 }
 .ornament svg { width: 120px; height: 16px; }
 
-/* ════════════════════════════
-   HAIKU LINES & WORDS
-════════════════════════════ */
+
 .haiku { margin-bottom: 2.8rem; }
 
 .line {
@@ -116,7 +111,7 @@ body {
   perspective: 600px; /* enables 3D child transforms */
 }
 
-/* Base word state — hidden */
+
 .word {
   display: inline-block;
   opacity: 0;
@@ -200,7 +195,6 @@ body {
   50%       { color: #f5c88a; text-shadow: 0 0 22px rgba(245, 175, 70, 0.6), 0 0 40px rgba(245, 150, 40, 0.25); letter-spacing: 0.1em; }
 }
 
-/* ── "sleeps," — slow float after landing ── */
 .word.sleeps.float {
   animation: flipIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards,
              floatWord 4s ease-in-out 1s infinite;
@@ -210,9 +204,7 @@ body {
   50%       { transform: translateY(-5px); }
 }
 
-/* ════════════════════════════
-   DIVIDER
-════════════════════════════ */
+
 .divider {
   display: flex;
   align-items: center;
@@ -225,7 +217,6 @@ body {
 .divider-line { width: 60px; height: 0.5px; background: rgba(245, 220, 170, 0.28); }
 .divider-dot  { width: 4px; height: 4px; border-radius: 50%; background: rgba(245, 220, 170, 0.38); }
 
-/* ── Label ── */
 .label {
   font-family: 'Cormorant SC', serif;
   font-size: 11px;
@@ -237,15 +228,12 @@ body {
   animation: fadeUp 1.2s ease forwards 5s;
 }
 
-/* ── Shared fade-up ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ════════════════════════════
-   SPARK PARTICLES
-════════════════════════════ */
+
 .sparks {
   position: fixed;
   inset: 0;
@@ -259,3 +247,16 @@ body {
   background: var(--gold);
   opacity: 0;
 }
+
+  
+  
+
+
+  
+  
+ 
+
+  
+             
+   
+ 
